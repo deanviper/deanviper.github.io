@@ -1,3 +1,8 @@
+function toggleRibbon() {
+    var friendBoxContainer = document.getElementById('friend-box-container');
+    friendBoxContainer.style.display = friendBoxContainer.style.display === 'none' ? 'block' : 'none';
+}
+
 function openLetter(friendName) {
     var letterContent = getLetterContent(friendName);
 

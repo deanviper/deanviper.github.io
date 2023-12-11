@@ -1,13 +1,49 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.main-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.ribbon {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 40px 40px 0;
+    border-color: transparent #ff0000 transparent transparent;
+}
+
+.friend-box-container {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 180px;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .friend-box {
-    cursor: pointer;
-    background-color: #f0f0f0;
     padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
     text-align: center;
 }
 
