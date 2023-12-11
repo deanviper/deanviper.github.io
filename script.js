@@ -7,8 +7,10 @@ function openLetter(friendName) {
     var letterContent = getLetterContent(friendName);
 
     document.getElementById('friend-box-container').style.display = 'none';
-    document.getElementById('letter-container').style.display = 'block';
-    document.getElementById('letter-container').innerHTML = letterContent;
+    var letterContainer = document.getElementById('letter-container');
+    letterContainer.style.display = 'block';
+    letterContainer.innerHTML = letterContent;
+    letterContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.7)'; /* Translucent black background */
 }
 
 function exitLetter() {
