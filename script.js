@@ -51,6 +51,17 @@ function createFadedWords(words) {
         fadedWordsContainer.appendChild(wordElement);
     });
 
+    // Repeat the words for more scattering
+    words.forEach(function (word) {
+        var wordElement = document.createElement('div');
+        wordElement.classList.add('faded-word');
+        wordElement.textContent = word;
+        var position = getRandomPosition();
+        wordElement.style.top = position.top + 'px';
+        wordElement.style.left = position.left + 'px';
+        fadedWordsContainer.appendChild(wordElement);
+    });
+
     document.body.appendChild(fadedWordsContainer);
 }
 
