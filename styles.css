@@ -54,15 +54,29 @@ body {
 }
 
 .friend-box {
-    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 80px; /* Adjusted the height of each friend box */
+    background-color: #d9534f; /* Christmas Red */
+    border: 2px solid #5bc0de; /* Christmas Blue */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    border-bottom: 1px solid #5bc0de; /* Christmas Blue */
-    text-align: center;
+    margin-bottom: 10px; /* Added some margin between friend boxes */
     transition: background-color 0.3s;
 }
 
 .friend-box:hover {
     background-color: #5cb85c; /* Christmas Green */
+}
+
+.friend-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .exit-button {
