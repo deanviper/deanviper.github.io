@@ -43,21 +43,9 @@ body {
     border-color: transparent #5bc0de transparent transparent; /* Christmas Blue */
 }
 
+/* Add this rule to hide friend boxes initially */
 .friend-box-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 460px; /* Adjusted the width of the friend box container */
-    background-color: #5a5553; /* Updated Background Color */
-    border: 2px solid #5bc0de; /* Christmas Blue */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s, height 0.5s; /* Added transition for box-shadow and height */
-    overflow: hidden;
+    display: none;
 }
 
 .friend-box {
