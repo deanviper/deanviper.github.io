@@ -140,4 +140,5 @@ body {
     font-weight: bold;
     white-space: nowrap;
     transform: translate(-50%, -50%);
+	font-family: cursive; /* Added cursive font-family */
 }
