@@ -21,8 +21,9 @@ body {
     cursor: pointer;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start; /* Align content at the start of the flex container */
+    justify-content: space-around; /* Distribute items with equal space around them */
     transition: background-color 0.3s;
 }
 
@@ -52,8 +53,8 @@ body {
 }
 
 .friend-box {
-    width: 40px; /* Adjusted the width of each friend box */
-    height: 40px; /* Adjusted the height of each friend box */
+    width: 120px; /* Adjusted the width of each friend box */
+    height: 120px; /* Adjusted the height of each friend box */
     background-color: #808080; /* Initial color within the palette of the grey background */
     border: 2px solid #5bc0de; /* Christmas Blue */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -68,7 +69,7 @@ body {
 
 .friend-name {
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
 }
 
