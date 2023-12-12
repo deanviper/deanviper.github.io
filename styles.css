@@ -15,7 +15,7 @@ body {
     position: relative;
     width: 500px; /* Increased the size of the main box */
     height: 500px; /* Increased the size of the main box */
-    background-color: #d9534f; /* Christmas Red */
+    background-color: #808080; /* Initial color within the palette of the grey background */
     border: 2px solid #5bc0de; /* Christmas Blue */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -58,9 +58,9 @@ body {
 
 .friend-box {
     position: relative;
-    width: 120px; /* Adjusted the width of each friend box */
-    height: 120px; /* Adjusted the height of each friend box */
-    background-color: #d9534f; /* Christmas Red */
+    width: 40px; /* Adjusted the width of each friend box */
+    height: 40px; /* Adjusted the height of each friend box */
+    background-color: #808080; /* Initial color within the palette of the grey background */
     border: 2px solid #5bc0de; /* Christmas Blue */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
