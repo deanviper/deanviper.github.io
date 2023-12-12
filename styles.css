@@ -11,7 +11,7 @@ body {
     position: relative;
 }
 
-.main-box {
+..main-box {
     position: relative;
     width: 500px;
     height: 500px;
@@ -22,7 +22,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: space-around;
     justify-content: space-around;
     transition: background-color 0.3s;
 }
@@ -48,7 +48,7 @@ body {
     display: none;
     flex: 1;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .friend-box {
