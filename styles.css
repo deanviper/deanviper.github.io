@@ -48,8 +48,7 @@ body {
     display: none;
     flex: 1; /* The friend box container takes the remaining space */
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .friend-box {
