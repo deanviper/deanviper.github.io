@@ -82,4 +82,3 @@ var words = [
     "olivia", "green", "timong kong nag-iisa", "ucc", "gin", "marriot"
 ];
 
-createFadedWords(words);

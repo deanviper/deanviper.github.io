@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>South's 23rd</title>
+    <script defer src="script.js"></script>
+    <title>Christmas Letters</title>
 </head>
+
 <body>
+    <div class="main-box" onclick="toggleRibbon()">
+        <div class="ribbon"></div>
+    </div>
 
-<div class="main-box" onclick="toggleRibbon()">
-    <div class="ribbon"></div>
-</div>
+    <div id="friend-box-container" class="friend-box-container">
+        <div class="friend-box" onclick="openLetter('Joan Rustia')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Joan Rustia</div>
+        </div>
+        <div class="friend-box" onclick="openLetter('Winona Resurreccion')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Winona Resurreccion</div>
+        </div>
+        <div class="friend-box" onclick="openLetter('Rejeena Rosillon')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Rejeena Rosillon</div>
+        </div>
+        <div class="friend-box" onclick="openLetter('Sarah Salazar')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Sarah Salazar</div>
+        </div>
+        <div class="friend-box" onclick="openLetter('Gertrude Mendoza')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Gertrude Mendoza</div>
+        </div>
+        <div class="friend-box" onclick="openLetter('Rachelle Salvador')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Rachelle Salvador</div>
+        </div>
+        <div class="friend-box" onclick="openLetter('Arar Tuscano')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Arar Tuscano</div>
+        </div>
+        <div class="friend-box" onclick="openLetter('Nina Silerio')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Nina Silerio</div>
+        </div>
+        <div class="friend-box" onclick="openLetter('Dee Raposa')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Dee Raposa</div>
+        </div>
+        <div class="friend-box" onclick="openLetter('Mama Mitch')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Mama Mitch</div>
+        </div>
+        <div class="friend-box" onclick="openLetter('Papa Toto')">
+            <div class="ribbon-small"></div>
+            <div class="friend-name">Papa Toto</div>
+        </div>
+    </div>
 
-<div id="friend-box-container" class="friend-box-container">
-    <div class="friend-box" onclick="openLetter('Joan Rustia')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-    <div class="friend-box" onclick="openLetter('Winona Resurreccion')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-    <div class="friend-box" onclick="openLetter('Rejeena Rosillon')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-    <div class="friend-box" onclick="openLetter('Sarah Salazar')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-    <div class="friend-box" onclick="openLetter('Gertrude Mendoza')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-    <div class="friend-box" onclick="openLetter('Rachelle Salvador')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-    <div class="friend-box" onclick="openLetter('Arar Tuscano')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-    <div class="friend-box" onclick="openLetter('Nina Silerio')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-    <div class="friend-box" onclick="openLetter('Dee Raposa')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-    <div class="friend-box" onclick="openLetter('Mama Mitch')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-    <div class="friend-box" onclick="openLetter('Papa Toto')">
-        <div class="friend-name"></div>
-        <div class="ribbon-small"></div>
-    </div>
-</div>
+    <div id="letter-container"></div>
 
-<div id="letter-container">
-</div>
-
-<script src="script.js"></script>
 </body>
+
 </html>
