@@ -60,7 +60,7 @@ body {
     position: relative;
     width: 120px; /* Adjusted the width of each friend box */
     height: 120px; /* Adjusted the height of each friend box */
-    background-color: #d9534f; /* Christmas Red */
+    background-color: #5bc0de; /* Complementary Christmas Blue */
     border: 2px solid #5bc0de; /* Christmas Blue */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
