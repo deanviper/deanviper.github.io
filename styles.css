@@ -130,6 +130,7 @@ body {
     bottom: 0;
     z-index: 1;
     pointer-events: none;
+    font-family: cursive; /* Set font-family to cursive */
 }
 
 .faded-word {
@@ -139,5 +140,4 @@ body {
     font-weight: bold;
     white-space: nowrap;
     transform: translate(-50%, -50%);
-    font-family: cursive; /* Set font-family to cursive */
 }

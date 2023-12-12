@@ -1,6 +1,6 @@
 function toggleRibbon() {
     var friendBoxContainer = document.getElementById('friend-box-container');
-    friendBoxContainer.style.display = friendBoxContainer.style.display === 'none' ? 'block' : 'none';
+    friendBoxContainer.style.display = friendBoxContainer.style.display === 'none' ? 'flex' : 'none'; // Changed to 'flex'
 }
 
 function openLetter(friendName) {
@@ -10,12 +10,12 @@ function openLetter(friendName) {
     var letterContainer = document.getElementById('letter-container');
     letterContainer.style.display = 'block';
     letterContainer.innerHTML = letterContent;
-    letterContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.7)'; /* Translucent black background */
+    letterContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
 }
 
 function exitLetter() {
     document.getElementById('letter-container').style.display = 'none';
-    document.getElementById('friend-box-container').style.display = 'block';
+    document.getElementById('friend-box-container').style.display = 'flex'; // Changed to 'flex'
 }
 
 function getLetterContent(friendName) {
@@ -82,3 +82,4 @@ var words = [
     "olivia", "green", "timong kong nag-iisa", "ucc", "gin", "marriot"
 ];
 
+createFadedWords(words);
