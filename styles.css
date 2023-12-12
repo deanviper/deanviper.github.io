@@ -57,7 +57,7 @@ body {
 }
 
 .friend-box {
-    position: relative;
+    position: absolute; /* Updated to absolute positioning */
     width: 120px; /* Adjusted the width of each friend box */
     height: 120px; /* Adjusted the height of each friend box */
     background-color: #d9534f; /* Christmas Red */
