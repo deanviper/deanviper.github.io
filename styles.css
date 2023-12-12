@@ -11,7 +11,7 @@ body {
     position: relative;
 }
 
-..main-box {
+.main-box {
     position: relative;
     width: 500px;
     height: 500px;
@@ -22,7 +22,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: space-between;
     justify-content: space-around;
     transition: background-color 0.3s;
 }
@@ -48,11 +48,14 @@ body {
     display: none;
     flex: 1;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
 }
 
 .friend-box {
-    width: 120px;
+    width: calc(25% - 20px);
     height: 120px;
     background-color: #808080;
     border: 2px solid #5bc0de;
@@ -137,4 +140,44 @@ body {
     font-weight: bold;
     white-space: nowrap;
     transform: translate(-50%, -50%);
+}
+
+/* Add or update the following CSS styles for the friend boxes */
+.friend-box-container {
+    display: none;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+}
+
+.friend-box {
+    width: calc(25% - 20px);
+    height: 120px;
+    background-color: #808080;
+    border: 2px solid #5bc0de;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.friend-box:hover {
+    background-color: #5cb85c;
+}
+
+.friend-name {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ribbon-small {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #5bc0de transparent transparent;
 }
