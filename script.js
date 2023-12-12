@@ -77,9 +77,8 @@ function createFadedWords(words) {
 }
 
 var words = [
-    "palangga", "tapsecret", "doc", "koomi", "supernatural", "ay?!", "greys anatomy", "8-ball",
-    "green apple", "damit sa closet", "crunch chicken", "mayon skyline", "motorcycle", "javier",
-    "olivia", "green", "timong kong nag-iisa", "ucc", "gin", "marriot"
+    "Joan Rustia", "Winona Resurreccion", "Rejeena Rosillon", "Sarah Salazar", "Gertrude Mendoza",
+    "Rachelle Salvador", "Arar Tuscano", "Nina Silerio", "Dee Raposa", "Mama Mitch", "Papa Toto"
 ];
 
 createFadedWords(words);
