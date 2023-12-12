@@ -5,65 +5,65 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #5a5553; /* Updated Background Color */
-    color: rgba(255, 255, 255, 0.5); /* Faded text color */
+    background-color: #5a5553;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 20px;
     position: relative;
 }
 
 .main-box {
     position: relative;
-    width: 500px; /* Increased the size of the main box */
-    height: 500px; /* Increased the size of the main box */
-    background-color: #808080; /* Initial color within the palette of the grey background */
-    border: 2px solid #5bc0de; /* Christmas Blue */
+    width: 500px;
+    height: 500px;
+    background-color: #808080;
+    border: 2px solid #5bc0de;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start; /* Align content at the start of the flex container */
-    justify-content: space-around; /* Distribute items with equal space around them */
+    align-content: space-between;
+    justify-content: space-around;
     transition: background-color 0.3s;
 }
 
 .ribbon {
-    width: 100%; /* Ribbon takes full width of the box */
+    width: 100%;
     height: 0;
     border-style: solid;
     border-width: 0 40px 40px 0;
-    border-color: transparent #5bc0de transparent transparent; /* Christmas Blue */
+    border-color: transparent #5bc0de transparent transparent;
     transition: border-color 0.3s;
 }
 
 .main-box:hover {
-    background-color: #5cb85c; /* Christmas Green */
+    background-color: #5cb85c;
 }
 
 .main-box:hover .ribbon {
-    border-color: transparent #5bc0de transparent transparent; /* Christmas Blue */
+    border-color: transparent #5bc0de transparent transparent;
 }
 
 .friend-box-container {
     display: none;
-    flex: 1; /* The friend box container takes the remaining space */
+    flex: 1;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .friend-box {
-    width: 120px; /* Adjusted the width of each friend box */
-    height: 120px; /* Adjusted the height of each friend box */
-    background-color: #808080; /* Initial color within the palette of the grey background */
-    border: 2px solid #5bc0de; /* Christmas Blue */
+    width: 120px;
+    height: 120px;
+    background-color: #808080;
+    border: 2px solid #5bc0de;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    margin: 10px; /* Added some margin between friend boxes */
+    margin: 10px;
     transition: background-color 0.3s;
 }
 
 .friend-box:hover {
-    background-color: #5cb85c; /* Christmas Green */
+    background-color: #5cb85c;
 }
 
 .friend-name {
@@ -77,7 +77,7 @@ body {
     height: 0;
     border-style: solid;
     border-width: 0 20px 20px 0;
-    border-color: transparent #5bc0de transparent transparent; /* Christmas Blue */
+    border-color: transparent #5bc0de transparent transparent;
 }
 
 .exit-button {
@@ -86,17 +86,17 @@ body {
     right: 10px;
     cursor: pointer;
     color: #fff;
-    font-size: 24px; /* Increased the font size */
-    font-weight: bold; /* Bold font */
-    background-color: #d9534f; /* Christmas Red */
-    padding: 8px 16px; /* Increased padding for better visibility */
-    border: 2px solid #5bc0de; /* Christmas Blue */
-    border-radius: 5px; /* Added border radius for rounded corners */
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #d9534f;
+    padding: 8px 16px;
+    border: 2px solid #5bc0de;
+    border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .exit-button:hover {
-    background-color: #5cb85c; /* Christmas Green */
+    background-color: #5cb85c;
     color: #fff;
 }
 
@@ -107,7 +107,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7); /* Translucent black background */
+    background: rgba(0, 0, 0, 0.7);
     z-index: 2;
     padding: 20px;
     text-align: center;
@@ -120,20 +120,19 @@ body {
     margin-top: 20px;
 }
 
-/* Faded words in the background */
 .faded-words {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1; /* Set a lower z-index to place behind other elements */
-    pointer-events: none; /* Make the words non-interactable */
+    z-index: 1;
+    pointer-events: none;
 }
 
 .faded-word {
     position: absolute;
-    color: rgba(255, 255, 255, 0.1); /* Faded text color */
+    color: rgba(255, 255, 255, 0.1);
     font-size: 14px;
     font-weight: bold;
     white-space: nowrap;
