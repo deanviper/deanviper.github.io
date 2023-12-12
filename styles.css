@@ -20,7 +20,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     overflow: hidden;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 1s; /* Added transform for split animation */
 }
 
 .ribbon {
@@ -37,6 +37,7 @@ body {
 
 .main-box:hover {
     background-color: #5cb85c; /* Christmas Green */
+    transform: translateX(-50%) scale(0.5); /* Split animation */
 }
 
 .main-box:hover .ribbon {
@@ -60,7 +61,7 @@ body {
     position: relative;
     width: 120px; /* Adjusted the width of each friend box */
     height: 120px; /* Adjusted the height of each friend box */
-    background-color: #d9534f; /* Christmas Red */
+    background-color: #38505b; /* Updated color to complement the background */
     border: 2px solid #5bc0de; /* Christmas Blue */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -152,4 +153,3 @@ body {
     white-space: nowrap;
     transform: translate(-50%, -50%);
 }
-
