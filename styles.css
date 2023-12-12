@@ -47,15 +47,15 @@ body {
 .friend-box-container {
     display: none;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-end; /* Adjusted positioning to the right */
     align-items: center;
     width: 100%;
     padding: 10px;
 }
 
 .friend-box {
-    width: 60px; /* Adjusted width for smaller size */
-    height: 60px; /* Adjusted height for smaller size */
+    width: 40px; /* Adjusted width for smaller size */
+    height: 40px; /* Adjusted height for smaller size */
     background-color: #808080;
     border: 2px solid #5bc0de;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
