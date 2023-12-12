@@ -20,14 +20,14 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: background-color 0.3s;
 }
 
 .ribbon {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    width: 0;
+    width: 100%; /* Ribbon takes full width of the box */
     height: 0;
     border-style: solid;
     border-width: 0 40px 40px 0;
@@ -43,13 +43,15 @@ body {
     border-color: transparent #5bc0de transparent transparent; /* Christmas Blue */
 }
 
-/* Add this rule to hide friend boxes initially */
 .friend-box-container {
     display: none;
+    flex: 1; /* The friend box container takes the remaining space */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .friend-box {
-    position: relative;
     width: 40px; /* Adjusted the width of each friend box */
     height: 40px; /* Adjusted the height of each friend box */
     background-color: #808080; /* Initial color within the palette of the grey background */
@@ -65,19 +67,12 @@ body {
 }
 
 .friend-name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .ribbon-small {
-    position: absolute;
-    top: -5px;
-    left: 5px;
     width: 0;
     height: 0;
     border-style: solid;
