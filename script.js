@@ -1,3 +1,12 @@
+// Add this part to the existing script
+var words = [
+    "palangga", "tapsecret", "doc", "koomi", "supernatural", "ay?!", "greys anatomy", "8-ball",
+    "green apple", "damit sa closet", "crunch chicken", "mayon skyline", "motorcycle", "javier",
+    "olivia", "green", "timong kong nag-iisa", "ucc", "gin", "marriot"
+];
+
+createFadedWords(words);
+
 function toggleRibbon() {
     var friendBoxContainer = document.getElementById('friend-box-container');
     friendBoxContainer.style.display = friendBoxContainer.style.display === 'none' ? 'block' : 'none';
@@ -75,11 +84,3 @@ function createFadedWords(words) {
 
     document.body.appendChild(fadedWordsContainer);
 }
-
-var words = [
-    "palangga", "tapsecret", "doc", "koomi", "supernatural", "ay?!", "greys anatomy", "8-ball",
-    "green apple", "damit sa closet", "crunch chicken", "mayon skyline", "motorcycle", "javier",
-    "olivia", "green", "timong kong nag-iisa", "ucc", "gin", "marriot"
-];
-
-createFadedWords(words);

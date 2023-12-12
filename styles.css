@@ -60,7 +60,7 @@ body {
     position: relative;
     width: 120px; /* Adjusted the width of each friend box */
     height: 120px; /* Adjusted the height of each friend box */
-    background-color: #5bc0de; /* Complementary Christmas Blue */
+    background-color: #d9534f; /* Christmas Red */
     border: 2px solid #5bc0de; /* Christmas Blue */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -151,4 +151,49 @@ body {
     font-weight: bold;
     white-space: nowrap;
     transform: translate(-50%, -50%);
+}
+
+/* Add this part to the existing styles */
+.friend-box:nth-child(1) .friend-name::before {
+    content: 'Joan Rustia';
+}
+
+.friend-box:nth-child(2) .friend-name::before {
+    content: 'Winona Resurreccion';
+}
+
+.friend-box:nth-child(3) .friend-name::before {
+    content: 'Rejeena Rosillon';
+}
+
+.friend-box:nth-child(4) .friend-name::before {
+    content: 'Sarah Salazar';
+}
+
+.friend-box:nth-child(5) .friend-name::before {
+    content: 'Gertrude Mendoza';
+}
+
+.friend-box:nth-child(6) .friend-name::before {
+    content: 'Rachelle Salvador';
+}
+
+.friend-box:nth-child(7) .friend-name::before {
+    content: 'Arar Tuscano';
+}
+
+.friend-box:nth-child(8) .friend-name::before {
+    content: 'Nina Silerio';
+}
+
+.friend-box:nth-child(9) .friend-name::before {
+    content: 'Dee Raposa';
+}
+
+.friend-box:nth-child(10) .friend-name::before {
+    content: 'Mama Mitch';
+}
+
+.friend-box:nth-child(11) .friend-name::before {
+    content: 'Papa Toto';
 }
