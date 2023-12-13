@@ -30,8 +30,9 @@
 
         friendNames.forEach(function (friendName) {
             var friendBox = document.createElement('div');
+            var firstName = friendName.split(" ")[0].toLowerCase()
             friendBox.classList.add('friend-box');
-            friendBox.onclick = function () { openLetter(friendName); };
+            friendBox.onclick = function () { openLetter(firstName); };
             friendBox.innerHTML = `
                 <div class="ribbon-small"></div>
                 <div class="friend-name">${friendName}</div>

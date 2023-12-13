@@ -21,7 +21,7 @@ function exitLetter() {
 function getLetterContent(friendName) {
     return `<div class="letter">
                 <h2>${friendName}'s Letter</h2>
-                <img src="${friendName}.jpg" alt="${friendName}'s Letter">
+                <img src="./images/${friendName}.jpg" alt="${friendName}'s Letter">
                 <p>This is a letter from ${friendName}...</p>
                 <div class="exit-button" onclick="exitLetter()">Exit</div>
             </div>`;
