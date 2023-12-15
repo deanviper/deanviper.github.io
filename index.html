@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <!-- Single Main Box -->
     <div class="main-box" onclick="toggleRibbon()">
         <div class="ribbon"></div>
         <div id="friend-box-container" class="friend-box-container"></div>
@@ -22,30 +21,24 @@
     <script>
         // JavaScript code for dynamically generating friend boxes
         var friendNames = [
-            "Joan Rustia", "Winona Resurreccion", "Rejeena Rosillon",
-            "Sarah Salazar", "Gertrude Mendoza", "Rachelle Salvador",
-            "Arar Tuscano", "Nina Silerio", "Dee Raposa",
-            "Mama Mitch", "Papa Toto", "Tala", "Mamalad", "Inna Reyes"
+            "Joan Rustia", "Winona Resurreccion", "Rejeena Rosillon", "Sarah Salazar",
+            "Gertrude Mendoza", "Rachelle Salvador", "Arar Tuscano", "Nina Silerio",
+            "Dee Raposa", "Mama Mitch", "Papa Toto"
         ];
 
         var friendBoxContainer = document.getElementById('friend-box-container');
 
         friendNames.forEach(function (friendName) {
-            var friendBox = createFriendBox(friendName);
-            friendBoxContainer.appendChild(friendBox);
-        });
-
-        function createFriendBox(friendName) {
             var friendBox = document.createElement('div');
-            var firstName = friendName.split(" ")[0].toLowerCase();
+            var firstName = friendName.split(" ")[0].toLowerCase()
             friendBox.classList.add('friend-box');
             friendBox.onclick = function () { openLetter(firstName); };
             friendBox.innerHTML = `
                 <div class="ribbon-small"></div>
                 <div class="friend-name">${friendName}</div>
             `;
-            return friendBox;
-        }
+            friendBoxContainer.appendChild(friendBox);
+        });
     </script>
 
     <script>
@@ -65,4 +58,3 @@
 </body>
 
 </html>
-
