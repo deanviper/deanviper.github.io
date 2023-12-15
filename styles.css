@@ -61,8 +61,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     margin: 5px;
-    transition: background
-
+    transition: background-color 0.3s;
 }
 
 .friend-box:hover {
@@ -131,7 +130,7 @@ body {
     bottom: 0;
     z-index: 1;
     pointer-events: none;
-    font-family: cursive; /* Set font-family to cursive */
+    font-family: cursive;
 }
 
 .faded-word {
@@ -141,5 +140,5 @@ body {
     font-weight: bold;
     white-space: nowrap;
     transform: translate(-50%, -50%);
-	font-family: cursive; /* Added cursive font-family */
+    font-family: cursive;
 }
