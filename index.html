@@ -21,9 +21,8 @@
     <script>
         // JavaScript code for dynamically generating friend boxes
         var friendNames = [
-            "Joan Rustia", "Winona Resurreccion", "Rejeena Rosillon", "Sarah Salazar",
-            "Gertrude Mendoza", "Rachelle Salvador", "Arar Tuscano", "Nina Silerio",
-            "Dee Raposa", "Mama Mitch", "Papa Toto", "Tala", "Mamalad", "Inna Reyes"
+            "Joan Rustia", "Winona Resurreccion", "Rejeena Rosillon",
+            "Sarah Salazar", "Gertrude Mendoza", "Rachelle Salvador"
         ];
 
         var friendBoxContainer = document.getElementById('friend-box-container');
@@ -38,6 +37,28 @@
                 <div class="friend-name">${friendName}</div>
             `;
             friendBoxContainer.appendChild(friendBox);
+        });
+    </script>
+
+    <script>
+        // JavaScript code for dynamically generating friend boxes (second row)
+        var friendNamesRow2 = [
+            "Arar Tuscano", "Nina Silerio", "Dee Raposa", "Mama Mitch",
+            "Papa Toto", "Tala", "Mamalad", "Inna Reyes"
+        ];
+
+        var friendBoxContainerRow2 = document.getElementById('friend-box-container-row2');
+
+        friendNamesRow2.forEach(function (friendName) {
+            var friendBox = document.createElement('div');
+            var firstName = friendName.split(" ")[0].toLowerCase()
+            friendBox.classList.add('friend-box');
+            friendBox.onclick = function () { openLetter(firstName); };
+            friendBox.innerHTML = `
+                <div class="ribbon-small"></div>
+                <div class="friend-name">${friendName}</div>
+            `;
+            friendBoxContainerRow2.appendChild(friendBox);
         });
     </script>
 
