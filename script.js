@@ -79,7 +79,7 @@ function createFadedWords(words) {
 var words = [
     "palangga", "tapsecret", "doc", "koomi", "supernatural", "ay?!", "greys anatomy", "8-ball",
     "green apple", "damit sa closet", "crunch chicken", "mayon skyline", "motorcycle", "javier",
-    "olivia", "green", "timong kong nag-iisa", "ucc", "gin", "marriot", "dean winchester", "sam winchester", "72", "black scoop", "javalogy", "gulp"
+    "olivia", "green", "timog kong nag-iisa", "ucc", "gin", "marriot", "dean winchester", "sam winchester", "72", "black scoop", "javalogy", "gulp"
 ];
 
 createFadedWords(words);
