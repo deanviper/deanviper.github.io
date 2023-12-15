@@ -11,44 +11,28 @@
 </head>
 
 <body>
-    <!-- First Row -->
+    <!-- Single Main Box -->
     <div class="main-box" onclick="toggleRibbon()">
         <div class="ribbon"></div>
-        <div id="friend-box-container1" class="friend-box-container"></div>
-    </div>
-
-    <!-- Second Row -->
-    <div class="main-box" onclick="toggleRibbon()">
-        <div class="ribbon"></div>
-        <div id="friend-box-container2" class="friend-box-container"></div>
+        <div id="friend-box-container" class="friend-box-container"></div>
     </div>
 
     <div id="letter-container"></div>
 
     <script>
         // JavaScript code for dynamically generating friend boxes
-        var friendNames1 = [
+        var friendNames = [
             "Joan Rustia", "Winona Resurreccion", "Rejeena Rosillon",
-            "Sarah Salazar", "Gertrude Mendoza", "Rachelle Salvador"
-        ];
-
-        var friendBoxContainer1 = document.getElementById('friend-box-container1');
-
-        friendNames1.forEach(function (friendName) {
-            var friendBox = createFriendBox(friendName);
-            friendBoxContainer1.appendChild(friendBox);
-        });
-
-        var friendNames2 = [
+            "Sarah Salazar", "Gertrude Mendoza", "Rachelle Salvador",
             "Arar Tuscano", "Nina Silerio", "Dee Raposa",
             "Mama Mitch", "Papa Toto", "Tala", "Mamalad", "Inna Reyes"
         ];
 
-        var friendBoxContainer2 = document.getElementById('friend-box-container2');
+        var friendBoxContainer = document.getElementById('friend-box-container');
 
-        friendNames2.forEach(function (friendName) {
+        friendNames.forEach(function (friendName) {
             var friendBox = createFriendBox(friendName);
-            friendBoxContainer2.appendChild(friendBox);
+            friendBoxContainer.appendChild(friendBox);
         });
 
         function createFriendBox(friendName) {
@@ -81,3 +65,4 @@
 </body>
 
 </html>
+
