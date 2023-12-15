@@ -1,3 +1,4 @@
+/* Add or adjust the styles as needed */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -45,7 +46,6 @@ body {
 }
 
 .friend-box-container {
-    display: none;
     flex: 1;
     justify-content: center;
     align-items: center;
@@ -54,14 +54,15 @@ body {
 }
 
 .friend-box {
-    width: 31.75px; /* Increased the width by 35% */
-    height: 31.75px; /* Increased the height by 35% */
+    width: 31.75px;
+    height: 31.75px;
     background-color: #808080;
     border: 2px solid #5bc0de;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     margin: 5px;
-    transition: background-color 0.3s;
+    transition: background
+
 }
 
 .friend-box:hover {
